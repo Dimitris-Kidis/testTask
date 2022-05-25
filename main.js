@@ -21,8 +21,8 @@ const createTemplate = (task, index) => {
                     ${task.description}
                 </textarea>
                 <div class="buttons">
-                    <button onclick="editTask(${index})" class="edit-button">Edit</button>
-                    <button onclick="deleteTask(${index})" class="delete-button">Delete</button>
+                    <span onclick="editTask(${index})" class="edit-button">Edit</span>
+                    <span onclick="deleteTask(${index})" class="delete-button">Delete</span>
                 </div>
             </div>
     `;
