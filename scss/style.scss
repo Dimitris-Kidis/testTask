@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab Slab', sans-serif;
+}
+
+body {
+    // background-color: #0059FA;
+    background: rgb(107, 160, 255);
+    // background: linear-gradient(90deg, rgba(107,160,255,1) 0%, rgba(61,125,240,1) 100%);
+    // height: 100vmin;
+    padding: 10% 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+    // margin: 0 auto;
+    // margin-top: 20%;
+    background-color: #F3F8FA;
+    border-radius: 33px;
+    padding: 20px 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+
+
+    input#main-input {
+        display: block;
+        outline: none;
+        border-radius: 33px;
+        font-family: 'Roboto Slab', sans-serif;
+        border: 0px solid #898BA5;
+        height: 2rem;
+        font-family: 'Roboto Slab', sans-serif;
+        text-align: center;
+        font-size: 15px;
+        // box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1); 
+        box-shadow:
+            0px 0px 3.6px rgba(0, 0, 0, 0.03),
+            0px 0px 10px rgba(0, 0, 0, 0.043),
+            0px 0px 24.1px rgba(0, 0, 0, 0.052),
+            0px 0px 80px rgba(0, 0, 0, 0.07);
+
+    }
+
+    input#main-input::placeholder {
+        font-family: 'Roboto Slab', sans-serif;
+        text-align: center;
+        font-size: 15px;
+
+    }
+
+    input#main-input:placeholder-shown {
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+
+
+
+    .task {
+        width: 100%;
+        box-shadow:
+            0px 0px 3.6px rgba(0, 0, 0, 0.03),
+            0px 0px 10px rgba(0, 0, 0, 0.043),
+            0px 0px 24.1px rgba(0, 0, 0, 0.052),
+            0px 0px 80px rgba(0, 0, 0, 0.07);
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 33px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        h4 {
+            width: 65%;
+            line-height: 20px;
+            font-weight: 500;
+        }
+
+        input#input-checkbox {
+            margin: 5px 15px;
+            width: 5%;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        
+
+        textarea#area-title {
+            width: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 20px;
+            font-weight: 500;
+            background-color: #F3F8FA;
+            text-align: center;
+            border: none;
+            font-size: 15px;
+            outline: none;
+            resize: none;
+            white-space: normal;
+        }
+
+        .edit-button,
+        .delete-button {
+            width: 100%;
+            text-align: center;
+            color: #979CA6;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .delete-button {
+            color: rgb(243, 92, 92);
+        }
+
+        .edit-button:hover {
+            transition: 0.2s all ease-in;
+            color: #676767;
+        }
+
+        .delete-button:hover {
+            transition: 0.2s all ease-in;
+            color: rgb(179, 66, 66);
+        }
+
+        .buttons {
+            width: 20%;
+            display: flex;
+            text-align: right;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    .task:hover {
+        box-shadow:
+            0px 0px 1.9px rgba(0, 0, 0, 0.016),
+            0px 0px 4.3px rgba(0, 0, 0, 0.029),
+            0px 0px 7.7px rgba(0, 0, 0, 0.039),
+            0px 0px 12.8px rgba(0, 0, 0, 0.046),
+            0px 0px 21.2px rgba(0, 0, 0, 0.051),
+            0px 0px 37px rgba(0, 0, 0, 0.056),
+            0px 0px 80px rgba(0, 0, 0, 0.07);
+        transition: 0.2s all ease-in;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
