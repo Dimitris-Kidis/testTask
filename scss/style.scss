@@ -6,10 +6,7 @@
 }
 
 body {
-    // background-color: #0059FA;
     background: rgb(107, 160, 255);
-    // background: linear-gradient(90deg, rgba(107,160,255,1) 0%, rgba(61,125,240,1) 100%);
-    // height: 100vmin;
     padding: 10% 50px;
     margin: auto;
     display: flex;
@@ -18,8 +15,6 @@ body {
 }
 
 .main-card {
-    // margin: 0 auto;
-    // margin-top: 20%;
     background-color: #F3F8FA;
     border-radius: 33px;
     padding: 20px 20px;
@@ -66,8 +61,8 @@ body {
 
 
 
-
     .task {
+
         width: 100%;
         box-shadow:
             0px 0px 3.6px rgba(0, 0, 0, 0.03),
@@ -85,40 +80,34 @@ body {
         justify-content: space-around;
         align-items: center;
 
-        h4 {
-            width: 65%;
-            line-height: 20px;
-            font-weight: 500;
-        }
-
         input#input-checkbox {
-            margin: 5px 15px;
+            transform: scale(1.8);
+            margin: 5px 20px;
             width: 5%;
             text-align: center;
             cursor: pointer;
         }
 
-        
-
         textarea#area-title {
-            width: 75%;
+            width: 70%;
             display: flex;
             align-items: center;
             justify-content: center;
             line-height: 20px;
             font-weight: 500;
-            background-color: #F3F8FA;
+            background-color: inherit;
             text-align: center;
             border: none;
             font-size: 15px;
             outline: none;
             resize: none;
             white-space: normal;
+            transition: 0s;
         }
 
         .edit-button,
         .delete-button {
-            width: 100%;
+            width: 25%;
             text-align: center;
             color: #979CA6;
             cursor: pointer;
@@ -163,7 +152,22 @@ body {
     }
 }
 
-.hidden {
-    display: none;
+.task.checked {
+    background-color: #ace3b9 !important;
+    opacity: 0.5;
+
+    textarea {
+        text-decoration: line-through !important;
+    }
 }
 
+.task.delition {
+    animation: opacity 1s ease-in-out;
+}
+
+.editing {
+    transition: 0.3s ease-in !important;
+    background-color: #e6e6e6 !important;
+    border-radius: 33px !important;
+    padding: 5px 10px;
+}
